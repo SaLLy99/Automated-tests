@@ -8,13 +8,13 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class ExampleTests {
+public class SimpleUITest {
 
     @Test
     public void firstTest(){
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
-        driver.get("http://the-internet.herokuapp.com/");
+        driver.get("https://demoqa.com/login");
         driver.manage().window().maximize();
         WebElement button=driver.findElement(By.xpath("//ul/li/a"));
         button.click();

@@ -13,11 +13,11 @@ import java.time.Duration;
 import java.util.List;
 
 
-public class Task2Tests {
+public class WaitsAndSelectors {
 
     WebDriver driver;
 
-    public Task2Tests() {
+    public WaitsAndSelectors() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
     }
