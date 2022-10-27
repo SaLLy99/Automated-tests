@@ -7,8 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="BTU_Project" />
-        <module name="Automated-tests" />
+        <module name="Automated-test" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Automated-tests" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
