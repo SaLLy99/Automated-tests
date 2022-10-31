@@ -40,6 +40,16 @@ public class APITestByRestAssured {
        Assert.assertEquals(isbn,"9781593277574");
 
     }
+    @Test
+    public void getBookPage(){
+        given()
+                .when()
+                .get("https://bookstore.toolsqa.com/BookStore/v1/Books")
+                .then().log().all()
+                .assertThat()
+                .body("books[0,1].pages",hasItems(234,254));
+
+    }
 
 
 }
