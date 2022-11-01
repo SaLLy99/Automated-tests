@@ -3,6 +3,7 @@ import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.hasItems;
 
 public class APITestByRestAssured {
     @Test
@@ -41,5 +42,14 @@ public class APITestByRestAssured {
 
     }
 
+    @Test
+    public void getBookPage(){
+        given()
+                .when()
+                .get("https://bookstore.toolsqa.com/BookStore/v1/Books")
+                .then().log().all()
+                .assertThat()
+                .body("books[0,1].pages",hasItems(234,254));
 
+    }
 }
