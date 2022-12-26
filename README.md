@@ -1,2 +1,2 @@
 # Automated-tests
-This is for automated test
+This is for automated tests
