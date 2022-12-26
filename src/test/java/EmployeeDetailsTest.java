@@ -10,7 +10,7 @@ import static org.hamcrest.Matchers.equalTo;
 @Feature("Verify CRUD Operations on Employee module")
 public class EmployeeDetailsTest {
 
-    String BaseURL = "http://dummy.restapiexample.com/api";
+    /*String BaseURL = "http://dummy.restapiexample.com/api";
 
     @Test(description = "GET Request Operation")
     @Story("GET Request with Valid User")
@@ -85,6 +85,6 @@ public class EmployeeDetailsTest {
                 .body("data.employee_name", equalTo("APITest"))
                 .body("message", equalTo("Successfully! Record has been added."));
 
-    }
+    }*/
 
 }
