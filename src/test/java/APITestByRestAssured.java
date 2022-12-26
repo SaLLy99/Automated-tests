@@ -42,7 +42,7 @@ public class APITestByRestAssured {
 
     }
 
-    @Test
+    /*@Test
     public void getBookPage(){
         given()
                 .when()
@@ -51,5 +51,5 @@ public class APITestByRestAssured {
                 .assertThat()
                 .body("books[0,1].pages",hasItems(234,254));
 
-    }
+    }*/
 }
