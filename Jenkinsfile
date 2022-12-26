@@ -1,4 +1,5 @@
-	  agent any
+	pipeline {
+	agent any
 	  stages {
 	    stage('Build') {
 	      parallel {
@@ -30,7 +31,20 @@
 	
 
 	  }
+	  }
 	
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
