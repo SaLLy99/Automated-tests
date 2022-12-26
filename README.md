@@ -1,3 +1,4 @@
 # Automated-tests
-This is for automated tests.
-Allure is added as well.
+This is for automated test.
+Allure is added as well
+
